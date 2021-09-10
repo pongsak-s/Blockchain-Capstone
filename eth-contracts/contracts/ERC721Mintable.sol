@@ -6,7 +6,13 @@ import 'openzeppelin-solidity/contracts/math/SafeMath.sol';
 import 'openzeppelin-solidity/contracts/token/ERC721/IERC721Receiver.sol';
 import "./Oraclize.sol";
 
+
 contract Ownable {
+
+    modifier onlyOwner() {
+        _;
+    }
+
     //  TODO's
     //  1) create a private '_owner' variable of type address with a public getter function
     //  2) create an internal constructor that sets the _owner var to the creater of the contract 
@@ -64,7 +70,8 @@ contract ERC165 {
     }
 }
 
-contract ERC721 is Pausable, ERC165 {
+contract ERC721 is ERC165 {
+//contract ERC721 is Pausable, ERC165 { TODO: fix here by uncommenting this line of code
 
     event Transfer(address indexed from, address indexed to, uint256 indexed tokenId);
 
@@ -418,6 +425,7 @@ contract ERC721Metadata is ERC721Enumerable, usingOraclize {
     // TODO: Create private vars for token _name, _symbol, and _baseTokenURI (string)
 
     // TODO: create private mapping of tokenId's to token uri's called '_tokenURIs'
+    mapping(uint256 => string) _tokenURIs; //TODO: just a mock, need to fix this line
 
     bytes4 private constant _INTERFACE_ID_ERC721_METADATA = 0x5b5e139f;
     /*
@@ -460,5 +468,13 @@ contract ERC721Metadata is ERC721Enumerable, usingOraclize {
 //      -returns a true boolean upon completion of the function
 //      -calls the superclass mint and setTokenURI functions
 
+
+
+
+
+
+contract ERC721MintableComplete {
+
+}
 
 

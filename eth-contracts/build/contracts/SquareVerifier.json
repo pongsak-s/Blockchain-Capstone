@@ -1,0 +1,116 @@
+{
+  "contractName": "SquareVerifier",
+  "abi": [],
+  "bytecode": "0x6080604052348015600f57600080fd5b50603580601d6000396000f3fe6080604052600080fdfea165627a7a72305820e400a4f7a96816afba833338cb7428298f74be0094164f148ad794eac2073e230029",
+  "deployedBytecode": "0x6080604052600080fdfea165627a7a72305820e400a4f7a96816afba833338cb7428298f74be0094164f148ad794eac2073e230029",
+  "sourceMap": "37:28:4:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;37:28:4;;;;;;;",
+  "deployedSourceMap": "37:28:4:-;;;;;",
+  "source": "pragma solidity >=0.4.21 <0.6.0;\n\n\n\n\ncontract SquareVerifier {\n\n}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+  "sourcePath": "/Users/pongsaks/Udacity/Blockchain/Blockchain-Capstone/eth-contracts/contracts/SquareVerifier.sol",
+  "ast": {
+    "absolutePath": "/Users/pongsaks/Udacity/Blockchain/Blockchain-Capstone/eth-contracts/contracts/SquareVerifier.sol",
+    "exportedSymbols": {
+      "SquareVerifier": [
+        7086
+      ]
+    },
+    "id": 7087,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 7085,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".21",
+          "<",
+          "0.6",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:32:4"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 7086,
+        "linearizedBaseContracts": [
+          7086
+        ],
+        "name": "SquareVerifier",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 7087,
+        "src": "37:28:4"
+      }
+    ],
+    "src": "0:91:4"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/pongsaks/Udacity/Blockchain/Blockchain-Capstone/eth-contracts/contracts/SquareVerifier.sol",
+    "exportedSymbols": {
+      "SquareVerifier": [
+        7086
+      ]
+    },
+    "id": 7087,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 7085,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".21",
+          "<",
+          "0.6",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:32:4"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 7086,
+        "linearizedBaseContracts": [
+          7086
+        ],
+        "name": "SquareVerifier",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 7087,
+        "src": "37:28:4"
+      }
+    ],
+    "src": "0:91:4"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.5+commit.47a71e8f.Emscripten.clang"
+  },
+  "networks": {
+    "1631286890877": {
+      "events": {},
+      "links": {},
+      "address": "0x111E06d16c9eE26C18716733e3F0Db0e802ef34c",
+      "transactionHash": "0xeff68db9eff6ace071ee6fd0d04fcbde502b56c759242e4957ae0d0b50e96518"
+    }
+  },
+  "schemaVersion": "3.0.3",
+  "updatedAt": "2021-09-10T16:12:23.595Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}

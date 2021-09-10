@@ -1,0 +1,116 @@
+{
+  "contractName": "SolnSquareVerifier",
+  "abi": [],
+  "bytecode": "0x6080604052348015600f57600080fd5b50603580601d6000396000f3fe6080604052600080fdfea165627a7a723058200bb6edbb54c0a51cfd147c9bac2309b53d74d18d16329713bb9f60fbac991b5d0029",
+  "deployedBytecode": "0x6080604052600080fdfea165627a7a723058200bb6edbb54c0a51cfd147c9bac2309b53d74d18d16329713bb9f60fbac991b5d0029",
+  "sourceMap": "790:32:3:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;790:32:3;;;;;;;",
+  "deployedSourceMap": "790:32:3:-;;;;;",
+  "source": "pragma solidity >=0.4.21 <0.6.0;\n\n\n\n// TODO define a contract call to the zokrates generated solidity contract <Verifier> or <renamedVerifier>\n\n\n\n// TODO define another contract named SolnSquareVerifier that inherits from your ERC721Mintable class\n\n\n\n// TODO define a solutions struct that can hold an index & an address\n\n\n// TODO define an array of the above struct\n\n\n// TODO define a mapping to store unique solutions submitted\n\n\n\n// TODO Create an event to emit when a solution is added\n\n\n\n// TODO Create a function to add the solutions to the array and emit the event\n\n\n\n// TODO Create a function to mint new NFT only after the solution has been verified\n//  - make sure the solution is unique (has not been used before)\n//  - make sure you handle metadata as well as tokenSuplly\n\n  \n\n\ncontract SolnSquareVerifier {\n\n}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+  "sourcePath": "/Users/pongsaks/Udacity/Blockchain/Blockchain-Capstone/eth-contracts/contracts/SolnSquareVerifier.sol",
+  "ast": {
+    "absolutePath": "/Users/pongsaks/Udacity/Blockchain/Blockchain-Capstone/eth-contracts/contracts/SolnSquareVerifier.sol",
+    "exportedSymbols": {
+      "SolnSquareVerifier": [
+        7083
+      ]
+    },
+    "id": 7084,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 7082,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".21",
+          "<",
+          "0.6",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:32:3"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 7083,
+        "linearizedBaseContracts": [
+          7083
+        ],
+        "name": "SolnSquareVerifier",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 7084,
+        "src": "790:32:3"
+      }
+    ],
+    "src": "0:848:3"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/pongsaks/Udacity/Blockchain/Blockchain-Capstone/eth-contracts/contracts/SolnSquareVerifier.sol",
+    "exportedSymbols": {
+      "SolnSquareVerifier": [
+        7083
+      ]
+    },
+    "id": 7084,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 7082,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".21",
+          "<",
+          "0.6",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:32:3"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 7083,
+        "linearizedBaseContracts": [
+          7083
+        ],
+        "name": "SolnSquareVerifier",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 7084,
+        "src": "790:32:3"
+      }
+    ],
+    "src": "0:848:3"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.5+commit.47a71e8f.Emscripten.clang"
+  },
+  "networks": {
+    "1631286890877": {
+      "events": {},
+      "links": {},
+      "address": "0xa3dB46Ee1b30219559214F874E11E61632a1C028",
+      "transactionHash": "0xedb0a901554c970900d10bd23b0a07688ce916cc7a9b7070bbcc68a16464555a"
+    }
+  },
+  "schemaVersion": "3.0.3",
+  "updatedAt": "2021-09-10T16:12:23.596Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
