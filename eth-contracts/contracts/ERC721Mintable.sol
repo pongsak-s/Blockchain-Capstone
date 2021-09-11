@@ -37,6 +37,11 @@ contract Ownable {
         //require(_owner == newOwner, "new owner not transferred");
 
     }
+
+    function owner() public onlyOwner view returns(address)
+    {
+        return _owner;
+    }
 }
 
 //  Create a Pausable contract that inherits from the Ownable contract
@@ -549,7 +554,7 @@ contract ERC721Metadata is ERC721Enumerable, usingOraclize {
 
 contract ERC721MintableComplete is ERC721Metadata ("PGGToken", "PGG", "https://s3-us-west-2.amazonaws.com/udacity-blockchain/capstone/") {
 
-    function mint(address to, uint256 tokenId, string memory tokenURI )  public onlyOwner returns(bool success)  {
+    function mint(address to, uint256 tokenId)  public onlyOwner returns(bool success)  {
         _mint(to, tokenId);
         setTokenURI(tokenId);
         success = true;
