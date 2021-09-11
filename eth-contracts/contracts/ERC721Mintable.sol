@@ -10,7 +10,7 @@ import "./Oraclize.sol";
 contract Ownable {
 
     //  1) create a private '_owner' variable of type address with a public getter function
-    address _owner;
+    address private _owner;
 
 
     //  2) create an internal constructor that sets the _owner var to the creater of the contract 
@@ -34,7 +34,7 @@ contract Ownable {
         //  add functionality to transfer control of the contract to a newOwner.
         _owner = newOwner;
         // make sure the new owner is a real address
-        require(_owner == newOwner, "new owner not transferred");
+        //require(_owner == newOwner, "new owner not transferred");
 
     }
 }
@@ -176,6 +176,7 @@ contract ERC721 is Pausable, ERC165 {
 
     function getApproved(uint256 tokenId) public view returns (address) {
         //  return token approval if it exists
+        return _tokenApprovals[tokenId];
     }
 
     /**
@@ -503,15 +504,15 @@ contract ERC721Metadata is ERC721Enumerable, usingOraclize {
     }
 
     // : create external getter functions for name, symbol, and baseTokenURI
-    function getName() public view returns(string memory)
+    function name() public view returns(string memory)
     {
         return _name;
     }
-    function getSymbol() public view returns(string memory)
+    function symbol() public view returns(string memory)
     {
         return _symbol;
     }
-    function getBaseTokenURI() public view returns(string memory)
+    function baseTokenURI() public view returns(string memory)
     {
         return _baseTokenURI;
     }
@@ -546,7 +547,7 @@ contract ERC721Metadata is ERC721Enumerable, usingOraclize {
 //      -calls the superclass mint and setTokenURI functions
 
 
-contract PGGToken is ERC721Metadata {
+contract ERC721MintableComplete is ERC721Metadata ("PGGToken", "PGG", "https://s3-us-west-2.amazonaws.com/udacity-blockchain/capstone/") {
 
     function mint(address to, uint256 tokenId, string memory tokenURI )  public onlyOwner returns(bool success)  {
         _mint(to, tokenId);
