@@ -584,9 +584,31 @@ contract Verifier {
              Pairing.negate(vk.alpha), vk.beta)) return 1;
         return 0;
     }
+    // function verifyTx(
+    //         Proof memory proof, uint[2] memory input
+    //     ) public view returns (bool r) {
+    //     uint[] memory inputValues = new uint[](2);
+        
+    //     for(uint i = 0; i < input.length; i++){
+    //         inputValues[i] = input[i];
+    //     }
+    //     if (verify(inputValues, proof) == 0) {
+    //         return true;
+    //     } else {
+    //         return false;
+    //     }
+    // }
+
+
     function verifyTx(
-            Proof memory proof, uint[2] memory input
+            uint[2] memory a,
+            uint[2][2] memory b,
+            uint[2] memory c, uint[2] memory input
         ) public view returns (bool r) {
+        Proof memory proof;
+        proof.a = Pairing.G1Point(a[0], a[1]);
+        proof.b = Pairing.G2Point([b[0][0], b[0][1]], [b[1][0], b[1][1]]);
+        proof.c = Pairing.G1Point(c[0], c[1]);
         uint[] memory inputValues = new uint[](2);
         
         for(uint i = 0; i < input.length; i++){

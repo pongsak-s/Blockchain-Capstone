@@ -43,7 +43,7 @@ contract('TestSquareVerifier', accounts => {
 
 	    it('should validate when using valid proof', async function () { 
 
-	    	var result = await this.contract.verifyTx([proofs.proof.a,proofs.proof.b,proofs.proof.c],proofs.inputs);
+	    	var result = await this.contract.verifyTx(proofs.proof.a,proofs.proof.b,proofs.proof.c,proofs.inputs);
 
 	    	assert.equal(result, true, "should validate when using valid proof");
 	        
@@ -61,7 +61,7 @@ contract('TestSquareVerifier', accounts => {
 		    //act
 		    try
 		    {
-	    		var result = await this.contract.verifyTx([fakeA,proofs.proof.b,proofs.proof.c],proofs.inputs);
+	    		var result = await this.contract.verifyTx(fakeA,proofs.proof.b,proofs.proof.c,proofs.inputs);
 		    } catch(e)
 		    {
 		    	isError = true;
