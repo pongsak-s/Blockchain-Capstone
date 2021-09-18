@@ -15,6 +15,14 @@ This is my capstone as a final udacity project for blockchain developer nanodegr
 * Using zk-SNARK to cope with verification without expose the sensitive information in public
 * OpenSea is adopt as a marketplace
 
+# Test Result
+
+```
+truffle test
+```
+
+![test result](https://github.com/pongsak-s/Blockchain-Capstone/blob/master/test_result.jpg)
+
 
 # Deployed Contract (Rinkeby)
 
