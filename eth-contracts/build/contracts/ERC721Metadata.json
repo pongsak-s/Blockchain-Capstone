@@ -28382,7 +28382,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.3",
-  "updatedAt": "2021-09-18T10:08:08.699Z",
+  "updatedAt": "2021-09-18T13:28:56.034Z",
   "devdoc": {
     "methods": {
       "isApprovedForAll(address,address)": {

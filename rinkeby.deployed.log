@@ -1,0 +1,37 @@
+   Deploying 'ERC721MintableComplete'
+   ----------------------------------
+   > transaction hash:    0xf9b16857da59d0bfd80b3d451a91a9d5e0cf228cdf2eb8ecf8f74b59a14e43cc
+   > Blocks: 0            Seconds: 5
+   > contract address:    0xfB70C39f6799540aBf15b8C5193BBf7b01718458
+   > account:             0x01f3e84b63bf890B5B0E21B6bf6EeB0e25179a24
+   > balance:             1.892070143995280753
+   > gas used:            2800993
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.02800993 ETH
+
+
+   Deploying 'Verifier'
+   --------------------
+   > transaction hash:    0x1f913a5046214467a67134c29a8304cc1f0ba2cf8f6ae72782d9a0af78809bbe
+   > Blocks: 0            Seconds: 5
+   > contract address:    0x5159fDD670DA5F5334cf37e041414b38Bd3a9308
+   > account:             0x01f3e84b63bf890B5B0E21B6bf6EeB0e25179a24
+   > balance:             1.881163733995280753
+   > gas used:            1090641
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.01090641 ETH
+
+
+   Deploying 'SolnSquareVerifier'
+   ------------------------------
+   > transaction hash:    0x0f589107d60933a198a24baf17b11cec25e970c85d772f1daa8e778783a171b6
+   > Blocks: 1            Seconds: 9
+   > contract address:    0x8883cCc302E8f782B9775111c89b72f2f0be1DE0
+   > account:             0x01f3e84b63bf890B5B0E21B6bf6EeB0e25179a24
+   > balance:             1.845769123995280753
+   > gas used:            3539461
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.03539461 ETH
